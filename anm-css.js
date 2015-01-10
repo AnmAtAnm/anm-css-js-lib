@@ -13,29 +13,6 @@ var Anm = (function(Anm) {
     document.getElementsByTagName("head")[0].appendChild(linkEl);
 
     if (onload) {
-      //// http://stackoverflow.com/questions/2635814/javascript-capturing-load-event-on-link
-      // function _cssIsLoaded(cssStylesheet) {
-      //   var cssLoaded = false;
-      //   try {
-      //     if ( cssStylesheet.sheet && cssStylesheet.sheet.cssRules.length > 0 ) {
-      //       cssLoaded = true;
-      //     } else if ( cssStylesheet.styleSheet && cssStylesheet.styleSheet.cssText.length > 0 ) {
-      //       cssLoaded = true;
-      //     } else if ( cssStylesheet.innerHTML && cssStylesheet.innerHTML.length > 0 ) {
-      //       cssLoaded = true;
-      //     }
-      //   } catch(ex){ }
-      //
-      //   if(cssLoaded) {
-      //     // your css is loaded! Do work!
-      //     // I'd recommend having listeners subscribe to cssLoaded event,
-      //     // and then here you can emit the event (ie. EventManager.emit('cssLoaded');
-      //   } else {
-      //     // I'm using underscore library, but setTimeout would work too
-      //     // You basically just need to call the function again in say, 50 ms
-      //     _.delay(_.bind(this._cssIsLoaded, this), 50, cssStylesheet);
-      //   }
-      // }
       linkEl.onload = onload;
     }
 
