@@ -1,6 +1,7 @@
 // Client-side Javascript function library for working with CSS.
 // https://github.com/AnmAtAnm/anm-css-js-lib
-var Anm = (function(Anm) {
+Anm = (typeof Anm === "undefined") ? {} : Anm;
+(function() {
   /** No-op method if anm-dev.js not loaded. */
   Anm.NOOP = function() {};
   Anm.log = Anm.log || Anm.NOOP;
@@ -57,4 +58,4 @@ var Anm = (function(Anm) {
   }
 
   return Anm;
-})(Anm || {});
+})();
