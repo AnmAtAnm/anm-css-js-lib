@@ -57,4 +57,4 @@ var Anm = (function(Anm) {
   }
 
   return Anm;
-})(Anm;
+})(Anm || {});
