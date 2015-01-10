@@ -1,4 +1,5 @@
-// Defines core library functions on global object Anm.
+// Client-side Javascript function library for working with CSS.
+// https://github.com/AnmAtAnm/anm-css-js-lib
 var Anm = (function(Anm) {
   /** No-op method if anm-dev.js not loaded. */
   Anm.NOOP = function() {};
